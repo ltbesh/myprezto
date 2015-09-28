@@ -32,6 +32,9 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'git' \
+  'homebrew' \
+  'python' \
   'prompt'
 
 #
@@ -50,6 +53,10 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:info:action' format 'action:%s'
+
+zstyle ':prezto:module:git:info:keys' format \
+  'rprompt' '%s'
 
 #
 # GNU Utility
